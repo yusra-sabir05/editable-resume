@@ -2,8 +2,8 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
-    background-color: #222;
+    color: #333; /* Changed text color to dark gray for better readability */
+    background-color: #f4f4f4; /* Light background for contrast */
 }
 
 body {
@@ -18,7 +18,7 @@ main {
 
 h1 {
     text-align: center;
-    color: #f39c12;
+    color: #2c3e50; /* Darker blue for the title */
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 50px;
@@ -29,11 +29,11 @@ h1 {
 form {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #333;
+    background-color: #ffffff; /* White background for the form */
     border-radius: 16px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Softer shadow */
     padding: 40px;
-    border-top: 6px solid #f39c12;
+    border-top: 6px solid #3498db; /* Blue border for the top */
 }
 
 fieldset {
@@ -44,9 +44,9 @@ fieldset {
 
 legend {
     font-weight: 900;
-    color: white;
+    color: #2c3e50; /* Darker blue for the legend */
     font-size: 1.5rem;
-    border-bottom: 3px solid #f39c12;
+    border-bottom: 3px solid #3498db; /* Blue border for the legend */
     padding-bottom: 10px;
     margin-bottom: 25px;
     display: block;
@@ -56,7 +56,7 @@ label {
     font-size: 1.2rem;
     margin-bottom: 10px;
     display: block;
-    color: #f39c12;
+    color: #3498db; /* Blue for labels */
 }
 
 input[type="text"],
@@ -67,27 +67,27 @@ textarea {
     padding: 15px;
     margin-top: 8px;
     border-radius: 10px;
-    border: 2px solid #555;
+    border: 2px solid #bdc3c7; /* Light gray border */
     box-sizing: border-box;
-    background-color: #444;
+    background-color: #ecf0f1; /* Light gray background for inputs */
     font-size: 1.1rem;
-    color: #eee;
+    color: #333; /* Dark text for inputs */
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input:focus,
 textarea:focus {
-    border-color: #f39c12;
+    border-color: #3498db; /* Blue border on focus */
     outline: none;
-    box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Blue shadow on focus */
 }
 
 button {
     display: block;
     width: 100%;
     padding: 18px;
-    background-color: #f39c12;
-    color: #222;
+    background-color: #3498db; /* Blue background for buttons */
+    color: #fff; /* White text for buttons */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -99,24 +99,24 @@ button {
 }
 
 button:hover {
-    background-color: #e67e22;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: #2980b9; /* Darker blue on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Softer shadow on hover */
 }
 
 #resumeOutput {
     max-width: 800px;
     margin: 50px auto;
     padding: 40px;
-    border: 3px solid #f39c12;
+    border: 3px solid #3498db; /* Blue border for resume output */
     border-radius: 16px;
-    background-color: #333;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    color: #eee;
+    background-color: #ffffff; /* White background for resume output */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    color: #333; /* Dark text for resume output */
 }
 
 #resumeOutput h2 {
     text-align: center;
-    color: #f39c12;
+    color: #2c3e50; /* Darker blue for headings */
     font-size: 2.5rem;
     margin-bottom: 25px;
     font-weight: 900;
@@ -124,10 +124,10 @@ button:hover {
 }
 
 #resumeOutput h3 {
-    color: #f39c12;
+    color: #3498db; /* Blue for subheadings */
     font-size: 1.6rem;
     margin-bottom: 20px;
-    border-bottom: 2px solid #555;
+    border-bottom: 2px solid #bdc3c7; /* Light gray border for subheadings */
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -135,7 +135,7 @@ button:hover {
 
 #resumeOutput h3::before {
     content: "✦";
-    color: #f39c12;
+    color: #3498db; /* Blue for the icon */
     margin-right: 15px;
     font-size: 1.5rem;
 }
@@ -144,7 +144,7 @@ button:hover {
     font-size: 1.2rem;
     margin: 15px 0;
     line-height: 1.6;
-    color: #ddd;
+    color: #555; /* Dark gray for paragraph text */
 }
 
 #resumeOutput ul {
@@ -154,14 +154,14 @@ button:hover {
 #resumeOutput ul li {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    color: #ccc;
+    color: #555; /* Dark gray for list items */
     position: relative;
     padding-left: 25px;
 }
 
 #resumeOutput ul li::before {
     content: "●";
-    color: #f39c12;
+    color: #3498db; /* Blue for list bullet */
     position: absolute;
     left: 0;
     font-size: 1.4rem;
@@ -169,14 +169,14 @@ button:hover {
 }
 
 .editable {
-    border: 2px solid #555;
+    border: 2px solid #bdc3c7; /* Light gray border for editable sections */
     padding: 10px;
-    background-color: #444;
+    background-color: #ecf0f1; /* Light gray background for editable sections */
     transition: background-color 0.3s;
 }
 
 .editable:hover {
-    background-color: #555;
+    background-color: #d5dbdb; /* Slightly darker gray on hover */
 }
 
 button.edit {
@@ -184,8 +184,8 @@ button.edit {
     max-width: 250px;
     margin: -10px auto 15px auto; /* Adjust margin-top to move button upwards */
     padding: 12px;
-    background-color: rgba(207, 203, 203, 0.349);
-    color: #fff;
+    background-color: rgba(52, 152, 219, 0.5); /* Semi-transparent blue */
+    color: #fff; /* White text for edit button */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -196,7 +196,7 @@ button.edit {
 }
 
 button.edit:hover {
-    background-color: rgb(185, 181, 181);
+    background-color: rgba(41, 128, 185, 0.5); /* Darker semi-transparent blue on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
